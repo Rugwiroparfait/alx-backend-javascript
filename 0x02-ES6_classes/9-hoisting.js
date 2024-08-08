@@ -1,3 +1,4 @@
+// Define the HolbertonClass class
 export class HolbertonClass {
     constructor(year, location) {
       this._year = year;
@@ -13,11 +14,16 @@ export class HolbertonClass {
     }
   }
   
+  // Create instances of HolbertonClass
+  const class2019 = new HolbertonClass(2019, 'San Francisco');
+  const class2020 = new HolbertonClass(2020, 'San Francisco');
+  
+  // Define the StudentHolberton class
   export class StudentHolberton {
-    constructor(firstName, lastName, holbertonClass) {
+    constructor(firstName, lastName, holbertonClass) { // Include holbertonClass parameter
       this._firstName = firstName;
       this._lastName = lastName;
-      this._holbertonClass = holbertonClass; // Correctly assign holbertonClass
+      this._holbertonClass = holbertonClass; // Assign holbertonClass to the instance
     }
   
     get fullName() {
@@ -25,17 +31,13 @@ export class HolbertonClass {
     }
   
     get holbertonClass() {
-      return this._holbertonClass; // Fix this getter to return the correct attribute
+      return this._holbertonClass; // Correct the return of holbertonClass
     }
   
     get fullStudentDescription() {
       return `${this._firstName} ${this._lastName} - ${this._holbertonClass.year} - ${this._holbertonClass.location}`;
     }
   }
-  
-  // Create instances of HolbertonClass
-  const class2019 = new HolbertonClass(2019, 'San Francisco');
-  const class2020 = new HolbertonClass(2020, 'San Francisco');
   
   // Create instances of StudentHolberton
   const student1 = new StudentHolberton('Guillaume', 'Salva', class2020);
@@ -45,5 +47,4 @@ export class HolbertonClass {
   const student5 = new StudentHolberton('Jason', 'Sandler', class2019);
   
   // Export the list of students
-  export const listOfStudents = [student1, student2, student3, student4, student5];
-  
+  export const listOfStudents = [student1, student2, student3, student4, student5];  
