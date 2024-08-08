@@ -1,0 +1,13 @@
+{
+  "name": "0x02-es6_classes",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Here’s a brief README for your ES6 Classes project:",
+  "main": "0-classroom.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
