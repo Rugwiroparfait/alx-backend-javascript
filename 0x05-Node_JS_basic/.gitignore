@@ -1,0 +1,38 @@
+# Node.js dependencies
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+
+# Test coverage reports
+coverage/
+
+# Build outputs
+dist/
+build/
+
+# Temporary files
+*.tmp
+*.swp
+.DS_Store
+.vscode/
+
+# Jest cache and coverage directories
+jest/
+jest-cache/
+jest-output/
+
+# Linting cache
+.eslintcache
+
+# npm package logs and lock files
+package-lock.json
+yarn.lock
+
